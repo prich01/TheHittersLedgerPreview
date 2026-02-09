@@ -1,1 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Hitter's Ledger | Master Your Plate Appearances</title>
+    <style>
+        :root {
+            --primary-blue: #0084ff; 
+            --accent-cyan: #00d4ff;
+            --dark-bg: #0d1117;   
+            --card-bg: #161b22;  
+            --text-white: #ffffff;
+            --text-silver: #8b949e;
+            --border-gray: #30363d;
+            --qab-green: #50fa7b;
+            --chase-red: #ff5555;
+        }
 
+        body { 
+            font-family: 'Inter', -apple-system, system-ui, sans-serif; 
+            margin: 0; background: var(--dark-bg); color: var(--text-white); line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+        /* Navigation */
+        nav {
+            padding: 25px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border-gray);
+        }
+        .logo-box { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+        .logo-img { height: 40px; border-radius: 4px; }
+        .logo-text { font-size: 1.2rem; font-weight: 800; color: white; letter-spacing: -0.5px; }
+        .logo-text span { color: var(--primary-blue); }
+
+        /* Hero Section */
+        .hero { padding: 80px 0 60px; text-align: center; }
+        h1 { font-size: clamp(2.5rem, 8vw, 4rem); margin: 0; font-weight: 900; letter-spacing: -2px; line-height: 1.1; }
+        .highlight { color: var(--primary-blue); }
+        p.subtitle { font-size: 1.2rem; color: var(--text-silver); margin: 20px auto 40px; max-width: 650px; }
+
+        .btn-main {
+            background: var(--primary-blue); color: white; padding: 16px 40px;
+            text-decoration: none; border-radius: 6px; font-weight: 700;
+            transition: all 0.3s; display: inline-block;
+            text-transform: uppercase; letter-spacing: 1px;
+        }
+        .btn-main:hover { background: var(--accent-cyan); color: #000; transform: translateY(-2px); }
+
+        /* Video Section */
+        .video-wrapper {
+            margin: 0 auto 80px;
+            max-width: 850px;
+            background: var(--card-bg);
+            padding: 10px;
+            border-radius: 12px;
+            border: 1px solid var(--border-gray);
+        }
+        .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 6px; }
+        .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+        /* Showcase Section */
+        .showcase { padding: 80px 0; background: #090c10; border-top: 1px solid var(--border-gray); }
+        .showcase-header { text-align: center; margin-bottom: 50px; }
+        
+        .showcase-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 24px;
+            border: 1px solid var(--border-gray);
+        }
+
+        .showcase-tabs { flex: 1; }
+        .tab {
+            padding: 16px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.2s;
+            background: rgba(255,255,255,0.02);
+            border: 1px solid transparent;
+        }
+        .tab:hover { background: rgba(255,255,255,0.05); }
+        .tab.active { background: rgba(0, 132, 255, 0.1); border: 1px solid var(--primary-blue); }
+        .tab h4 { margin: 0; font-size: 1.1rem; color: #fff; }
+        .tab.active h4 { color: var(--primary-blue); }
+        .tab p { margin: 4px 0 0; font-size: 0.9rem; color: var(--text-silver); }
+
+        .showcase-display { flex: 1; text-align: center; }
+        .phone-mockup {
+            display: inline-block;
+            width: 300px;
+            border: 12px solid #222;
+            border-radius: 40px;
+            background: #000;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+            position: relative;
+            overflow: hidden;
+        }
+        .phone-mockup img { width: 100%; display: block; transition: opacity 0.3s; }
+
+        footer { padding: 40px 0; text-align: center; color: var(--text-silver); font-size: 0.9rem; }
+
+        @media (max-width: 850px) {
+            .showcase-wrapper { flex-direction: column-reverse; padding: 20px; }
+            .phone-mockup { width: 260px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <nav>
+            <a href="#" class="logo-box">
+                <img src="hl_logo.jpg" alt="Logo" class="logo-img">
+                <div class="logo-text">THE HITTER'S <span>LEDGER</span></div>
+            </a>
+            <a href="/app/" class="nav-link">Login</a>
+        </nav>
+
+        <section class="hero">
+            <h1>Master the <span class="highlight">Box.</span></h1>
+            <p class="subtitle">The elite performance ledger built for ballplayers who treat every at-bat like a science. Build your database. Own the pitcher.</p>
+            <a href="/app/" class="btn-main">Launch App</a>
+        </section>
+
+        <div class="video-wrapper">
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/A8JpOg_8K-g?modestbranding=1&rel=0" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <section class="showcase">
+            <div class="showcase-header">
+                <h2>The Hitter's <span class="highlight">Toolkit</span></h2>
+                <p>Scroll through the features designed to give you the edge.</p>
+            </div>
+            
+            <div class="showcase-wrapper">
+                <div class="showcase-tabs">
+                    <div class="tab active" onclick="updateImg('At Bat History.png', this)">
+                        <h4>At-Bat History</h4>
+                        <p>Track every pitcher name, team, and result in a clean searchable list.</p>
+                    </div>
+                    <div class="tab" onclick="updateImg('New Ledger Entry.png', this)">
+                        <h4>Precision Logging</h4>
+                        <p>Map pitch sequences, velocity, and location in real-time between innings.</p>
+                    </div>
+                    <div class="tab" onclick="updateImg('Season Stats.png', this)">
+                        <h4>Season Analytics</h4>
+                        <p>Monitor your AVG, SLG, and OBP alongside advanced discipline metrics.</p>
+                    </div>
+                    <div class="tab" onclick="updateImg('QAB.png', this)">
+                        <h4>Quality At-Bats</h4>
+                        <p>Break down your QAB% against right-handed and left-handed pitching.</p>
+                    </div>
+                    <div class="tab" onclick="updateImg('Rake Method.png', this)">
+                        <h4>Mental Imagery</h4>
+                        <p>Use the R-A-K-E method to breathe, acknowledge, and visualize success.</p>
+                    </div>
+                </div>
+
+                <div class="showcase-display">
+                    <div class="phone-mockup">
+                        <img id="feat-img" src="At Bat History.png" alt="App Feature">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 THE HITTER'S LEDGER. Designed for the 1%.</p>
+    </footer>
+
+    <script>
+        function updateImg(src, el) {
+            const img = document.getElementById('feat-img');
+            img.style.opacity = '0';
+            setTimeout(() => {
+                img.src = src;
+                img.style.opacity = '1';
+                document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                el.classList.add('active');
+            }, 200);
+        }
+    </script>
+</body>
+</html>
