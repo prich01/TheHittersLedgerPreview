@@ -139,57 +139,66 @@
         </div>
 
         <section class="showcase">
-            <div class="showcase-header">
-                <h2>The Hitter's <span class="highlight">Toolkit</span></h2>
-                <div style="display: inline-block; background: rgba(0, 132, 255, 0.1); border: 1px solid var(--primary-blue); padding: 8px 20px; border-radius: 50px; margin-top: 10px;">
-                    <span style="color: #fff; font-weight: 600;">Only $2.99/mo or $19.99/year for the </span>
-                    <span style="color: var(--primary-blue); font-weight: 800; text-transform: uppercase; letter-spacing: 1px;">Pro Version</span>
-                </div>
-                <p style="margin-top: 20px;">Scroll through the features designed to give you the edge.</p>
+    <div class="showcase-header">
+        <h2>The Hitter's <span class="highlight">Toolkit</span></h2>
+        
+        <div style="display: inline-flex; align-items: center; background: linear-gradient(135deg, #0084ff 0%, #004e98 100%); padding: 10px 20px; border-radius: 12px; margin-top: 15px; box-shadow: 0 4px 15px rgba(0,132,255,0.3); border: 1px solid rgba(255,255,255,0.2);">
+            <div style="text-align: left; border-right: 1px solid rgba(255,255,255,0.3); padding-right: 15px; margin-right: 15px;">
+                <span style="display: block; font-size: 0.7rem; text-transform: uppercase; color: rgba(255,255,255,0.8); font-weight: 700; letter-spacing: 1px;">Monthly</span>
+                <span style="font-size: 1.2rem; color: #fff; font-weight: 800;">$2.99</span>
             </div>
-            
-            <div class="showcase-wrapper">
-                <div class="showcase-tabs">
-                    <div class="tab active" onclick="updateImg('At Bat History.png', this)">
-                        <h4>At-Bat History</h4>
-                        <p>Track every pitcher name, team, and result in a clean searchable list.</p>
-                    </div>
-                    <div class="tab" onclick="updateImg('New Ledger Entry.png', this)">
-                        <h4>Precision Logging</h4>
-                        <p>Map pitch sequences, velocity, and location in real-time.</p>
-                    </div>
-                    <div class="tab" onclick="updateImg('Chase Rate.png', this)">
-                        <h4>Plate Discipline</h4>
-                        <p>Monitor your <strong>Chase Rate</strong> to identify which zones are costing you strikes.</p>
-                    </div>
-                    <div class="tab" onclick="updateImg('1st Pitch Swing.png', this)">
-                        <h4>First Pitch Aggression</h4>
-                        <p>See your <strong>1st Pitch Strike %</strong> and how often you're ahead in the count.</p>
-                    </div>
-                    <div class="tab" onclick="updateImg('Season Stats.png', this)">
-                        <h4>Season Analytics</h4>
-                        <p>Monitor your AVG, SLG, and OBP alongside advanced metrics.</p>
-                    </div>
-                    <div class="tab" onclick="updateImg('QAB.png', this)">
-                        <h4>Quality At-Bats</h4>
-                        <p>Break down your QAB% against RHP and LHP.</p>
-                    </div>
-                    <div class="tab" onclick="updateImg('Rake Method.png', this)">
-                        <h4>Mental Imagery</h4>
-                        <p>Use the R-A-K-E method to breathe and visualize success.</p>
-                    </div>
-                </div>
+            <div style="text-align: left;">
+                <span style="display: block; font-size: 0.7rem; text-transform: uppercase; color: #00d4ff; font-weight: 700; letter-spacing: 1px;">Pro Version</span>
+                <span style="font-size: 1.2rem; color: #fff; font-weight: 800;">$19.99<small style="font-size: 0.7rem; font-weight: 400; opacity: 0.8;"> /year</small></span>
+            </div>
+        </div>
 
-                <div class="showcase-display">
-                    <div class="phone-mockup">
-                        <img id="feat-img" src="At Bat History.png" alt="App Feature">
-                    </div>
-                    <p style="color: var(--text-silver); font-size: 0.8rem; margin-top: 15px; font-style: italic;">
-                        * Advanced analytics require the Pro Pass.
-                    </p>
-                </div>
+        <p style="margin-top: 15px; font-weight: 600; color: var(--text-white);">
+            Give it a try — the free version allows you to log <span class="highlight">10 at-bats!</span>
+        </p>
+        
+        <p style="margin-top: 5px; color: var(--text-silver); font-size: 0.9rem;">Scroll through the features designed to give you the edge.</p>
+    </div>
+    
+    <div class="showcase-wrapper">
+        <div class="showcase-tabs">
+            <div class="tab active" onclick="updateImg('At Bat History.png', this)">
+                <h4>At-Bat History</h4>
+                <p>Track every pitcher name, team, and result in a clean searchable list.</p>
             </div>
-        </section>
+            <div class="tab" onclick="updateImg('New Ledger Entry.png', this)">
+                <h4>Precision Logging</h4>
+                <p>Map pitch sequences, velocity, and location in real-time.</p>
+            </div>
+            <div class="tab" onclick="updateImg('Chase Rate.png', this)">
+                <h4>Plate Discipline</h4>
+                <p>Monitor your <strong>Chase Rate</strong> to identify which zones are costing you strikes.</p>
+            </div>
+            <div class="tab" onclick="updateImg('1st Pitch Swing.png', this)">
+                <h4>First Pitch Aggression</h4>
+                <p>See your <strong>1st Pitch Swing %</strong> and how often you're ahead in the count.</p>
+            </div>
+            <div class="tab" onclick="updateImg('Season Stats.png', this)">
+                <h4>Season Analytics</h4>
+                <p>Monitor your AVG, SLG, and OBP alongside advanced metrics.</p>
+            </div>
+            <div class="tab" onclick="updateImg('QAB.png', this)">
+                <h4>Quality At-Bats</h4>
+                <p>Break down your QAB% against RHP and LHP.</p>
+            </div>
+            <div class="tab" onclick="updateImg('Rake Method.png', this)">
+                <h4>Mental Imagery</h4>
+                <p>Use the R-A-K-E method to breathe and visualize success.</p>
+            </div>
+        </div>
+
+        <div class="showcase-display">
+            <div class="phone-mockup">
+                <img id="feat-img" src="At Bat History.png" alt="App Feature">
+            </div>
+        </div>
+    </div>
+</section>
     </div>
 
     <footer>
