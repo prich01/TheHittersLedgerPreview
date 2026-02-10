@@ -141,7 +141,11 @@
         <section class="showcase">
             <div class="showcase-header">
                 <h2>The Hitter's <span class="highlight">Toolkit</span></h2>
-                <p>Scroll through the features designed to give you the edge.</p>
+                <div style="display: inline-block; background: rgba(0, 132, 255, 0.1); border: 1px solid var(--primary-blue); padding: 8px 20px; border-radius: 50px; margin-top: 10px;">
+                    <span style="color: #fff; font-weight: 600;">Only $2.99/mo or $19.99 for the </span>
+                    <span style="color: var(--primary-blue); font-weight: 800; text-transform: uppercase; letter-spacing: 1px;">Pro Version</span>
+                </div>
+                <p style="margin-top: 20px;">Scroll through the features designed to give you the edge.</p>
             </div>
             
             <div class="showcase-wrapper">
@@ -152,27 +156,27 @@
                     </div>
                     <div class="tab" onclick="updateImg('New Ledger Entry.png', this)">
                         <h4>Precision Logging</h4>
-                        <p>Map pitch sequences, velocity, and location in real-time between innings.</p>
-                    </div>
-                    <div class="tab" onclick="updateImg('Season Stats.png', this)">
-                        <h4>Season Analytics</h4>
-                        <p>Monitor your AVG, SLG, and OBP alongside advanced discipline metrics.</p>
-                    </div>
-                    <div class="tab" onclick="updateImg('QAB.png', this)">
-                        <h4>Quality At-Bats</h4>
-                        <p>Break down your QAB% against right-handed and left-handed pitching.</p>
-                    </div>
-                    <div class="tab" onclick="updateImg('Rake Method.png', this)">
-                        <h4>Mental Imagery</h4>
-                        <p>Use the R-A-K-E method to breathe, acknowledge, and visualize success.</p>
+                        <p>Map pitch sequences, velocity, and location in real-time.</p>
                     </div>
                     <div class="tab" onclick="updateImg('Chase Rate.png', this)">
                         <h4>Plate Discipline</h4>
                         <p>Monitor your <strong>Chase Rate</strong> to identify which zones are costing you strikes.</p>
                     </div>
-                    <div class="tab" onclick="updateImg('1st Pitch Swing.png', this)">
+                    <div class="tab" onclick="updateImg('1st Pitch.png', this)">
                         <h4>First Pitch Aggression</h4>
-                        <p>See your <strong>1st Pitch Swing Rate</strong> and determine what pitches you are attacking early.</p>
+                        <p>See your <strong>1st Pitch Strike %</strong> and how often you're ahead in the count.</p>
+                    </div>
+                    <div class="tab" onclick="updateImg('Season Stats.png', this)">
+                        <h4>Season Analytics</h4>
+                        <p>Monitor your AVG, SLG, and OBP alongside advanced metrics.</p>
+                    </div>
+                    <div class="tab" onclick="updateImg('QAB.png', this)">
+                        <h4>Quality At-Bats</h4>
+                        <p>Break down your QAB% against RHP and LHP.</p>
+                    </div>
+                    <div class="tab" onclick="updateImg('Rake Method.png', this)">
+                        <h4>Mental Imagery</h4>
+                        <p>Use the R-A-K-E method to breathe and visualize success.</p>
                     </div>
                 </div>
 
@@ -180,6 +184,9 @@
                     <div class="phone-mockup">
                         <img id="feat-img" src="At Bat History.png" alt="App Feature">
                     </div>
+                    <p style="color: var(--text-silver); font-size: 0.8rem; margin-top: 15px; font-style: italic;">
+                        * Advanced analytics require the Pro Pass.
+                    </p>
                 </div>
             </div>
         </section>
